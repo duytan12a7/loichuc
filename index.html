@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Chúc Tết 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Cấu hình toàn trang */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #FFEBCD, #FFDAB9);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #7B241C;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Video nền */
+        video.background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Tiêu đề */
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            color: #D35400;
+            margin-top: 20px;
+        }
+
+        /* Đồng hồ đếm ngược */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .time-box {
+            background: #FAD7A0;
+            border: 2px solid #D35400;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .time-box span {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #E74C3C;
+        }
+
+        .time-box label {
+            font-size: 1rem;
+            color: #7D3C98;
+        }
+
+        /* Hiệu ứng nhấp nháy */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        /* Lời chúc */
+        .message-container {
+            margin-top: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 243, 224, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            max-width: 90%;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            display: block;
+            line-height: 1.5;
+            color: #7B241C;
+        }
+
+        .message-container p {
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            opacity: 0;
+            animation: fadeIn 6s forwards;
+            margin: 15px 0;
+        }
+
+        /* Hiệu ứng fadeIn từng dòng */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .message-container p:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        .message-container p:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .message-container p:nth-child(3) {
+            animation-delay: 3s;
+        }
+
+        .message-container p:nth-child(4) {
+            animation-delay: 4s;
+        }
+
+        .message-container p:nth-child(5) {
+            animation-delay: 5s;
+        }
+
+        .message-container p:nth-child(6) {
+            animation-delay: 6s;
+        }
+
+        .message-container p:nth-child(7) {
+            animation-delay: 7s;
+        }
+
+        .message-container p:nth-child(8) {
+            animation-delay: 8s;
+        }
+
+        .message-container p:nth-child(9) {
+            animation-delay: 9s;
+        }
+
+        .message-container p:nth-child(10) {
+            animation-delay: 10s;
+        }
+
+        /* Hiển thị đồng hồ và ngày giờ hiện tại */
+        .current-time {
+            font-size: 1.2rem;
+            color: #D35400;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        /* Media Queries cho các thiết bị nhỏ */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .time-box {
+                width: 80px;
+                padding: 15px;
+            }
+
+            .time-box span {
+                font-size: 1.6rem;
+            }
+
+            .message-container p {
+                font-size: 1rem;
+            }
+
+            .current-time {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video nền -->
+    <video class="background-video" autoplay muted loop>
+        <source src="2.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+
+    <!-- Tiêu đề -->
+    <h1>Đếm Ngược Tết 2025</h1>
+
+    <!-- Đồng hồ đếm ngược -->
+    <div class="countdown">
+        <div class="time-box">
+            <span id="days">00</span>
+            <label>Ngày</label>
+        </div>
+        <div class="time-box">
+            <span id="hours">00</span>
+            <label>Giờ</label>
+        </div>
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <label>Phút</label>
+        </div>
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <label>Giây</label>
+        </div>
+    </div>
+
+    <!-- Hiển thị ngày giờ hiện tại -->
+    <div class="current-time" id="current-time"></div>
+
+    <!-- Container hiển thị lời chúc -->
+    <div class="message-container">
+                    <p>Chúc mừng năm mới 2025!</p>
+                    <p>Chúc gia đình bạn luôn khỏe mạnh, hạnh phúc.</p>
+                    <p>Năm mới, chúc bạn thành công rực rỡ trong mọi công việc.</p>
+                    <p>Chúc bạn và người thân một năm đầy ắp niềm vui và tài lộc.</p>
+                    <p>Hy vọng năm mới sẽ mang đến cho bạn nhiều cơ hội mới và những trải nghiệm tuyệt vời.</p>
+                    <p>Chúc mừng năm mới, vạn sự như ý!</p>
+                    <p>Chúc bạn mãi trẻ trung, năng động và thành công.</p>
+                    <p>Năm mới, chúc bạn một hành trình đầy ắp niềm vui và thành công.</p>
+                    <p>Mong rằng năm mới sẽ mang lại những niềm vui bất ngờ và những bước tiến mới trong cuộc sống.</p>
+                    <p>Chúc bạn có những khoảnh khắc hạnh phúc bên gia đình và bạn bè.</p>
+            </div>
+
+    <!-- Script JS -->
+    <script>
+        // Ngày kết thúc đếm ngược (Tết 2025 - 00:00, ngày 29 tháng 01 năm 2025)
+        const countdownDate = new Date("January 29, 2025 00:00:00").getTime();
+
+        // Hàm cập nhật đồng hồ mỗi giây
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            // Tính toán ngày, giờ, phút, giây
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Hiển thị lên giao diện
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+            // Nếu đếm ngược kết thúc
+            if (distance < 0) {
+                clearInterval(interval);
+                document.querySelector(".countdown").innerHTML = "<h2>Chúc mừng năm mới 2025!</h2>";
+            }
+        }
+
+        // Hàm cập nhật ngày giờ hiện tại
+        function updateCurrentTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString('vi-VN', {
+                weekday: 'long',
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: 'numeric', 
+                minute: 'numeric', 
+                second: 'numeric',
+                hour12: false
+            });
+            document.getElementById("current-time").innerText = ` Vào ${timeString}`;
+        }
+
+        // Cập nhật đồng hồ và thời gian hiện tại mỗi giây
+        const interval = setInterval(updateCountdown, 1000);
+        setInterval(updateCurrentTime, 1000);
+    </script>
+</body>
+</html>
